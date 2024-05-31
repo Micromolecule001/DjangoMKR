@@ -10,7 +10,7 @@ class RecipeViewTests(TestCase):
         # Створення тестових даних
         self.category1 = Category.objects.create(name='Appetizers')
         self.category2 = Category.objects.create(name='Desserts')
-
+    
         for i in range(15):  # Створимо 15 рецептів для випадкового вибору
             Recipe.objects.create(
                 title=f'Recipe {i + 1}',

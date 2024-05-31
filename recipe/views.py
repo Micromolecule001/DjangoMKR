@@ -13,7 +13,7 @@ def category_detail(request, id):
     category = get_object_or_404(Category, id=id)
 
     recipes = Recipe.objects.filter(category=category)
-
+    
     return render(request, 'category_detail.html', {'category': category, 'recipes': recipes})
 
 
